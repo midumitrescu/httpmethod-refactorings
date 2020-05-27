@@ -4,7 +4,7 @@
 
 Simply run the tests
 
-``
+```gradle
 ./gradlew test
 ```
 
