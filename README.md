@@ -1,5 +1,14 @@
 # Testing possible refactoring for making [HttpMethod](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/http/HttpMethod.html) extensible
 
+## Run
+
+Simply run the tests
+
+``
+./gradlew test
+```
+
+
 ## Preamble
 
 While trying to help [The Spring Framework](https://github.com/spring-projects/spring-framework)
@@ -23,7 +32,7 @@ of application code.
 
 ## Naive approach (package v2 in the code)
 
-###Approach
+### Approach
 1. Make **HttpMethod** an interface. 
 2. Rename current HttpMethod to **HttpMethods** and extend the *newly refactored* **HttpMethod** interface.
 3. Have all **HttpMethod.Get** point to **HttpMethods.GET** to not touch any existing references in code
@@ -73,7 +82,7 @@ The approach was to:
 3. Use the interface's static method **resolve**, which was present from the beginning, as a Factory Method to construct
 the proper 
 
-#####Pros to previous version
+##### Pros to previous version
 
 1. Equals method works properly
 2. Easier to migrate for switch cases, by having application developers change static import from 
