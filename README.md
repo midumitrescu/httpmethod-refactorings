@@ -67,6 +67,8 @@ switch (method) {
 
 ```
 
+verify signed commits
+
 #### Difficulties with the equals method
 
 please see [this test](ro.mdumitrescu.httpmethod.v2.HttpMethodTest.java)
