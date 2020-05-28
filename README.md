@@ -67,7 +67,6 @@ switch (method) {
 
 ```
 
-verify signed commits
 
 #### Difficulties with the equals method
 
