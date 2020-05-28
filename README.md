@@ -64,6 +64,7 @@ switch (method) {
                 .allow(SUPPORTED_METHODS).build();
     }
 
+
 ```
 
 #### Difficulties with the equals method
